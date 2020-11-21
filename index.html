@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="/css/modal.css">
 </head>
 <body>
-<button class="modalbtn">Open Modal</button>
-<section class="modal"> 
-    <div class="content">
-        <span class="close">&times;</span>
-        <header>
-        <h1>Lorem Ipsum</h1>
-        </header>   
+<div class="modal-overlay" id="modal-overlay"></div>
+
+<button id="open-button" class="open-button">Open Modal</button>
+<div class="modal" id="modal"> 
+    <button class="close-button" id="close-button">&times;</button>
+    <div class="modal-content">
+        <h1>CSSScript.com</h1>   
         <div class="text">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
         remaining essentially unchanged. It was popularised in the 1960s 
         with the release of Letraset sheets containing Lorem Ipsum passages, 
         and more recently with desktop publishing software like Aldus PageMaker 
         including versions of Lorem Ipsum. </div>
+    
         <footer class="modalFooter">
             <div class="buttonGroup">
                 <button class="btn-green">
@@ -31,7 +32,7 @@
             </div>
         </footer>
     </div>
-</section>
+</div>
 <script src="/js/modal.js"></script>
 </body>
 </html>
