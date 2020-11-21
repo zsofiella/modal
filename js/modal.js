@@ -1,14 +1,21 @@
-var modal = document.querySelector("#modal");
-var modalOverlay= document.querySelector("#modal-overlay");
-var closeButton= document.querySelector("#close-button");
-var openButton= document.querySelector("#open-button");
 
-closeButton.addEventListener("click, function(){
-  modal.classList.toggle("closed);
+var modalOverlay= document.querySelector("#modal-overlay");
+var modal = document.querySelector("#modal");
+var openButton= document.querySelector("#open-button");
+var closeButton= document.querySelector("#close-button");
+var cancelButton=document.querySelector("#btn-red");
+
+openButton.addEventListener("click", function(){
+  modal.classList.toggle("closed");
   modalOverlay.classList.toggle("closed");
 });
 
-openButton.addEventListener("click", function(){
+closeButton.addEventListener("click", function(){
+  modal.classList.toggle("closed");
+  modalOverlay.classList.toggle("closed");
+});
+
+cancelButton.addEventListener("click", function(){
   modal.classList.toggle("closed");
   modalOverlay.classList.toggle("closed");
 });
